@@ -1,1 +1,8 @@
 node_modules
+
+# build artefacts
+dist/*
+coverage/*
+
+# data definition files
+**/*.d.ts

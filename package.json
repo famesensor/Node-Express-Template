@@ -8,7 +8,7 @@
         "start": "node dist/server.js",
         "dev": "eslint --fix --ext .ts ./src && nodemon",
         "lint": "eslint '**/*.{js,ts}' --fix",
-        "prettier": "prettier --write .",
+        "prettier": "prettier --write \"src/**/*.ts\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
@@ -22,6 +22,7 @@
         "eslint-plugin-prettier": "^4.0.0",
         "nodemon": "^2.0.15",
         "prettier": "2.5.1",
+        "ts-node": "^10.8.1",
         "typescript": "^4.5.4"
     },
     "dependencies": {

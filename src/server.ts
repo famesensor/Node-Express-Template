@@ -3,6 +3,7 @@ dotenv.config()
 
 import express from 'express'
 import cors from 'cors'
+import { helloRoute } from './routes'
 
 const app = express(),
     port = process.env.APP_PORT || 3000
@@ -14,6 +15,8 @@ app.use(cors())
 app.use(express.json())
 // parse application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }))
+
+app.use('/hello', helloRoute)
 
 app.get('/', (req, res) => {
     res.status(200).json({ status: 'success' })
