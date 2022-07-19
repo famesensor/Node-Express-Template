@@ -1,8 +1,8 @@
 import dotenv from 'dotenv'
 dotenv.config()
 
-import express from 'express'
 import cors from 'cors'
+import express from 'express'
 import { helloRoute } from './routes'
 
 const app = express(),
