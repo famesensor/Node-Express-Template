@@ -3,6 +3,7 @@ dotenv.config()
 
 import cors from 'cors'
 import express from 'express'
+import helmet from 'helmet'
 import { helloRoute } from './routes'
 
 const app = express(),
@@ -10,6 +11,9 @@ const app = express(),
 
 // allow cors
 app.use(cors())
+
+// helmet
+app.use(helmet())
 
 // parse application/json
 app.use(express.json())
