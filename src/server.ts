@@ -1,10 +1,10 @@
 import dotenv from 'dotenv'
 dotenv.config()
 
+import { helloRoute } from '@router/index'
 import cors from 'cors'
 import express from 'express'
 import helmet from 'helmet'
-import { helloRoute } from './routes'
 
 const app = express(),
     port = process.env.APP_PORT || 3000

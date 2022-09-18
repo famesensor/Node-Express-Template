@@ -1,5 +1,5 @@
+import { getHello } from '@controller/hello'
 import { Router } from 'express'
-import { getHello } from '../controller/hello'
 
 const route = Router()
 
