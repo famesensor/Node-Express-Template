@@ -7,7 +7,7 @@ import express from 'express'
 import helmet from 'helmet'
 
 const app = express(),
-    port = process.env.APP_PORT || 3000
+    port = process.env.PORT || 3000
 
 // allow cors
 app.use(cors())
