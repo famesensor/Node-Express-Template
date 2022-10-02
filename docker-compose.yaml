@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  service:
+    container_name: node_express_template
+    restart: always
+    build: .
+    environment:
+      - PORT=${PORT}
+    env_file: 
+      - ./.env
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./test:/usr/src/app/test
+    working_dir: /usr/src/app
+    ports:
+      - "3001:3001"
+  
